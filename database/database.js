@@ -2,7 +2,7 @@ var faker = require('faker');
 const USERS = [
   {
     firstName: 'Joe',
-    lastName: 'Biden,
+    lastName: 'Biden',
   },
   {
     firstName: 'Donald',
