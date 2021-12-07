@@ -1,5 +1,5 @@
 const { ApolloServer, gql } = require('apollo-server');
-// const { resolvers } = require('./resolvers/resolvers');
+const { resolvers } = require('./resolvers/resolvers');
 
 const typeDefs = gql`
   type Book {
@@ -10,23 +10,6 @@ const typeDefs = gql`
     books: [Book]
   }
 `;
-
-const books = [
-  {
-    title: 'The Awakening',
-    author: 'Kate Chopin',
-  },
-  {
-    title: 'City of Glass',
-    author: 'Paul Auster',
-  },
-];
-
-const resolvers = {
-  Query: {
-    books: () => books,
-  },
-};
 
 const server = new ApolloServer({ typeDefs, resolvers });
 

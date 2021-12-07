@@ -1,16 +1,9 @@
-const books = [
-  {
-    title: 'The Awakening',
-    author: 'Kate Chopin',
-  },
-  {
-    title: 'City of Glass',
-    author: 'Paul Auster',
-  },
-];
+const { books } = require('../database/database.js');
 
 const resolvers = {
   Query: {
     books: () => books,
   },
 };
+
+module.exports = { resolvers };
