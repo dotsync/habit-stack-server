@@ -1,8 +1,8 @@
-const { books } = require('../database/database.js');
+const { USERS } = require('../database/database.js');
 
 const resolvers = {
   Query: {
-    books: () => books,
+    books: () => USERS,
   },
 };
 

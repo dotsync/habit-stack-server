@@ -1,18 +1,19 @@
-const books = [
+var faker = require('faker');
+const USERS = [
   {
-    title: 'The Awakening',
-    author: 'Kate Chopin',
+    firstName: 'Joe',
+    lastName: 'Biden,
   },
   {
-    title: 'City of Glass',
-    author: 'Paul Auster',
+    firstName: 'Donald',
+    lastName: 'Trump',
   },
   {
-    title: 'Chamber Of Secrets',
-    author: 'Harry Potter',
+    firstName: 'Egg',
+    lastName: 'Sandwich',
   },
 ];
 
 module.exports = {
-  books,
+  USERS,
 };
