@@ -13,7 +13,9 @@
     "apollo-server": "^3.5.0",
     "faker": "^5.5.3",
     "graphql": "^15.7.2",
-    "mongodb": "^4.2.1",
+    "mongodb": "^4.2.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.15"
   }
 }
